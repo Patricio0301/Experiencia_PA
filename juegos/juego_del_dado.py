@@ -16,5 +16,3 @@ def juego_del_dado():
     print("¡¡¡GANASTEEE!!!")
   else:
     print("Más suerte la próxima...")
-
-juego_del_dado()
