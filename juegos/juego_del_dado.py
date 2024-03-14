@@ -1,8 +1,20 @@
+from random import randint
 def juego_del_dado():
-    """
-    Esta función tiene que pedirle al usuario que aprete enter para que lance un dado.
-    Esto genera un número al azar que se le suma a la puntuación del usuario.
-    Después el computador también tiene que lanzar un dado.
-    El primero en sumar 30 puntos gana.
-    """
-    pass
+  c=0;a=0;b=0
+  while a<30 and b<30:
+    if c==0:
+      c+=1
+      n=input("Oprima Enter")
+      a+=randint(1,6)
+    elif c==1:
+      c-=1
+      b+=randint(1,6)
+    print("");print(f"JUGADOR: {a}\nMÁQUINA: {b}")
+
+  print("")
+  if a>=30:
+    print("¡¡¡GANASTEEE!!!")
+  else:
+    print("Más suerte la próxima...")
+
+juego_del_dado()
