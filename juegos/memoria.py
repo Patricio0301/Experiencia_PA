@@ -1,8 +1,13 @@
+import random
 def memoria():
-    """
-    Esta función representa el juego de memoria.
-    Debes generar una secuencia de números al azar y mostrarla al usuario.
-    Luego, debes pedir al usuario que repita la secuencia.
-    Se debe mostrar un mensaje si el usuario acierta o no.
-    """
-    pass
+  x=""
+  for i in range(10):
+    x+=str(random.randint(1,11))+", "
+  x=x[:-2]
+  print(x)
+  a=input("Ingrese la secuencia de números separados por coma y espacio: ")
+  if x==a:
+    print("ACERTASTEE")
+  else:
+    print("NO ACERTASTE :(")
+memoria()
