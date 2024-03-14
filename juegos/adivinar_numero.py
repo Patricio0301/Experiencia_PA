@@ -1,7 +1,8 @@
+from random import randint
 def adivinar_numero():
-    """
-    Esta función representa el juego de adivinar un número.
-    Debes generar un número al azar entre 1 y 10, y luego pedir al usuario que adivine el número.
-    Se debe mostrar un mensaje si el usuario adivina correctamente o no.
-    """
-    pass
+    prediccion = input ('adivina un numero del uno al diez (en numeral)')
+    n = ranint (1,10)
+    if prediccion == n:
+        print (f'Correcto! adivinaste que el número es  {n}')
+        return
+    print (f'No :( el número es {n})')
