@@ -10,4 +10,3 @@ def memoria():
     print("ACERTASTEE")
   else:
     print("NO ACERTASTE :(")
-memoria()
